@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: MonsterratRegular;
+    font-family: RalewayRegular;
 }
 
 body{
@@ -205,12 +205,21 @@ nav{
 
 .about-title{
     color: #313131;
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
 
+    font-family: RalewayRegular;
     margin-bottom: 20px;
 }
 
+.about-subtitle{
+    color: #313131;
+    font-size: 18px;
+    font-family: RalewayRegular;
+    font-weight: 400;
+
+    margin-bottom: 50px;
+}
 
 
 
