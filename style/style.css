@@ -1,2 +1,293 @@
-abbr,article,aside,audio,blockquote,body,code,div,em,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,img,label,legend,li,nav,object,ol,p,pre,section,span,table,tbody,tfoot,thead,time,tr,ul,video{font-size:100%;font-weight:inherit;margin:0;padding:0;vertical-align:baseline;border:0;background-color:transparent}iframe{font-size:100%;font-weight:inherit;vertical-align:baseline}iframe,small,strong,sub,sup,td,th{margin:0;padding:0;background-color:transparent}small{border:0}small,strong{vertical-align:baseline}small,sub,sup{font-weight:inherit}strong,sub,sup,td,th{font-size:100%}body,html{height:100%}html{overflow-y:scroll;box-sizing:border-box}*,:after,:before{box-sizing:inherit;background-repeat:no-repeat}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,small,summary{display:block}audio,embed,iframe,img,object,video{max-width:100%;height:auto}iframe,strong,sub,sup,td,th{border:0}audio:not([controls]){display:none;height:0}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}li,ul{list-style:none}sup{vertical-align:text-top}input[type=radio],sub{vertical-align:text-bottom}table{border-spacing:0;border-collapse:collapse}caption,td,th{font-weight:400;text-align:left;vertical-align:top}input,select{vertical-align:middle}input[type=checkbox]{vertical-align:bottom}b,strong{font-weight:700}small{font-size:80%}abbr,acronym{cursor:help;text-decoration:none;border-bottom:.1em dotted}a:active,a:hover{outline-width:0}input{border-radius:0}[role=button],[type=button],[type=reset],[type=submit],button,input[type=file],label{cursor:pointer}[disabled]{cursor:default}button,input,select,textarea{margin:0;text-transform:none;border:0}img{border-style:none}
-/* CSS RESET */
+*{
+    box-sizing: border-box;
+    font-family: MonsterratRegular;
+}
+
+body{
+    margin: 0;
+}
+
+div, a, nav, footer, header, input, p, h1, h2, h3, img, main, section {
+    display: flex;
+}
+
+p, h1, h2, h3{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+.col{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.box-shadow{
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+}
+
+/*
+=========== RESET =============
+*/
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 40px;
+    z-index: 20;
+    background: #fff;
+}
+
+.header-logo{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 5px;
+    /*text-transform: uppercase;*/
+
+}
+
+.logo-top{
+    font-family: RalewayMedium;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.logo-bottom{
+    position: relative;
+    top: -6px;
+    left: 40px;
+
+    font-size: 18px;
+    font-family: RalewayRegular;
+}
+
+nav{
+    width: 100%;
+    height: 70px;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item{
+    position: relative;
+
+    font-family: RalewayMedium;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+
+    padding: 10px 5px;
+    margin: 0 15px;
+
+    color: #212121;
+
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.nav-item:after, .nav-item:before{
+    position: absolute;
+
+    content: '';
+    height: 2px;
+    width: 100%;
+
+    background: #FFCA28;
+
+    opacity: 0;
+
+    transition: 0.4s all;
+}
+
+.nav-item:hover{
+    /*color: #FFCA28;*/
+}
+
+.nav-item:before{
+    top: 0;
+    left: 150px;
+}
+
+.nav-item:after{
+    bottom:0;
+    left: -150px;
+}
+
+
+.nav-item:hover:after{
+    left:0;
+    opacity: 1;
+}
+
+.nav-item:hover:before{
+    left:0;
+    opacity: 1;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../img/banner_bg.jpg") no-repeat center center;
+    background-size: cover;
+
+    filter: grayscale(10%) contrast(60%) brightness(0.7);
+}
+
+.page-title{
+    z-index: 10;
+    margin-top: 20px;
+
+    font-family: MonsterratRegular;
+    font-size: 52px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+.banner-button{
+    border: 2px solid #fff;
+    margin-top: 30px;
+    padding: 18px 35px;
+
+    z-index: 10;
+    color: #fff;
+    font-family: MonsterratMedium;
+    /*font-size: 14px;*/
+    /*text-transform: uppercase;*/
+
+    transition: 0.3s all;
+
+    border-radius: 2px;
+}
+
+.banner-button:hover{
+    color: #212121;
+    background: #FFCA28;
+    border-color: #FFCA28;
+}
+
+.about-wrapper{
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.about-title{
+    color: #313131;
+    font-size: 32px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+footer{
+    height: 100px;
+    background-color: #262626;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content-wrapper{
+    
+}
+
+.footer-copyright{
+    font-size: 14px;
+    color: #757575;
+}
+
+
+/*
+=========== FONTS =============
+*/
+
+@font-face{
+    font-family: MonsterratRegular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face{
+    font-family: MonsterratBlack;
+    src: url("../fonts/Montserrat-Black.ttf");
+}
+
+@font-face{
+    font-family: MonsterratLight;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face{
+    font-family: MonsterratThin;
+    src: url("../fonts/Montserrat-Thin.ttf");
+}
+
+@font-face{
+    font-family: MonsterratMedium;
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+
+@font-face{
+    font-family: RalewayThin;
+    src: url("../fonts/Raleway-Thin.ttf");
+}
+
+
+@font-face{
+    font-family: RalewayRegular;
+    src: url("../fonts/Raleway-Regular.ttf");
+}
+
+
+@font-face{
+    font-family: RalewayLight;
+    src: url("../fonts/Raleway-Light.ttf");
+}
+
+
+@font-face{
+    font-family: RalewayMedium;
+    src: url("../fonts/Raleway-Medium.ttf");
+}
+
+
+@font-face{
+    font-family: RalewayBlack;
+    src: url("../fonts/Raleway-Black.ttf");
+}
