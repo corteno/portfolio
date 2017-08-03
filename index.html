@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Borsodi Dávid | Full Stack Developer</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header class="box-shadow">
@@ -65,7 +66,7 @@
         </div>
     </section>
 
-    <section class="work-wrapper panel col">
+    <section class="work-wrapper panel col box-shadow">
 
         <h2 class="work-title panel-title">Portfolio</h2>
         <!--<h3 class="work-subtitle panel-subtitle">Things I've made for work or as a side project</h3>-->
@@ -110,6 +111,23 @@
 
             </a>
 
+            <a class="work-card col box-shadow" href="https://corteno.github.io/series/" target="_blank">
+                <div class="work-card-image-wrapper">
+                    <img src="./img/refs/ref_series.jpg" alt="series-rise" class="work-card-image">
+                </div>
+
+                <div class="work-card-content-wrapper col">
+                    <h3 class="work-card-title">Series Rise</h3>
+                    <div class="bar"></div>
+
+                    <ul class="work-card-made-with">
+                        <li class="work-subtitle">Design only</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+            </a>
+
             <a class="work-card col box-shadow" href="https://play.borsodidavid.com" target="_blank">
                 <div class="work-card-image-wrapper">
                     <img src="./img/refs/ref_music_app.jpg" alt="music-app" class="work-card-image">
@@ -118,16 +136,55 @@
                 <div class="work-card-content-wrapper col">
                     <h3 class="work-card-title">Music List App</h3>
                     <div class="bar"></div>
+
                     <ul class="work-card-made-with">
+                        <li class="work-subtitle">Work in progress</li>
                         <li>React/Redux</li>
                         <li>Node.js</li>
                         <li>Express</li>
                         <li>MongoDB</li>
                         <li>Socket.io</li>
-                        <li>CSS3</li>
                     </ul>
                 </div>
 
+            </a>
+
+            <a class="work-card col box-shadow" href="https://corteno.github.io/stopwatch/" target="_blank">
+                <div class="work-card-image-wrapper">
+                    <img src="./img/refs/ref_stopwatch_alt.jpg" alt="series-rise" class="work-card-image">
+                </div>
+
+                <div class="work-card-content-wrapper col">
+                    <h3 class="work-card-title">Stopwatch App</h3>
+                    <div class="bar"></div>
+
+                    <ul class="work-card-made-with">
+                        <li class="work-subtitle">Work in progress</li>
+                        <li>React/Redux</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+            </a>
+
+            <a class="work-card col box-shadow" href="https://github.com/corteno/chat" target="_blank">
+                <div class="work-card-image-wrapper">
+                    <img src="./img/refs/ref_chat.jpg" alt="realtime-chat" class="work-card-image">
+                </div>
+
+                <div class="work-card-content-wrapper col">
+                    <h3 class="work-card-title">Realtime chat</h3>
+                    <div class="bar"></div>
+
+                    <ul class="work-card-made-with">
+                        <li class="work-subtitle">Code only</li>
+                        <li>HTML5</li>
+                        <li>PHP</li>
+                        <li>Javascript</li>
+                        <li>AJAX</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
             </a>
 
         </div>
@@ -135,11 +192,31 @@
         <div class="work-panel-bg"></div>
     </section>
 
+    <section class="contact panel col">
+        <h2 class="panel-title contact-title">Let's work together!</h2>
+        <form action="" class="contact-form col">
+            <input class="form-input" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" class="form-input" placeholder="E-mail" required>
+            <textarea name="message" id="" class="form-textarea form-input" placeholder="Let's build something awesome" required></textarea>
+            <input type="submit" value="Submit" class="form-submit">
+        </form>
+    </section>
+
 
 </main>
 
 <footer>
     <div class="footer-content-wrapper col">
+        <div class="footer-links-wrapper">
+            <a href="https://github.com/corteno" class="footer-link github">
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+
+            <a href="" class="footer-link twitter">
+                <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </a>
+        </div>
+
         <p class="footer-copyright">Handmade by me © 2017.</p>
     </div>
 </footer>
