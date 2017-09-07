@@ -64,6 +64,8 @@ header{
     z-index: 20;
     background: #fff;
     height: 70px;
+
+    /*border-bottom: 1px solid #212121;*/
 }
 
 .header-logo{
@@ -285,12 +287,13 @@ nav{
 .about-content-wrapper{
     max-width: 1280px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .about-card{
     max-width: 350px;
+    min-width: 200px;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -301,7 +304,7 @@ nav{
 }
 
 .card-title{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 
     font-size: 24px;
     font-family: MonsterratMedium;
