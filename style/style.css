@@ -272,6 +272,7 @@ nav{
 }
 
 .about-wrapper{
+    position: relative;
     z-index: 9;
     background: #fff;
 }
@@ -284,6 +285,19 @@ nav{
     color: #313131;
 }
 
+.about-text{
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#about-me-anchor{
+    position: absolute;
+    top: -70px;
+}
+
 .about-content-wrapper{
     max-width: 1280px;
     width: 100%;
@@ -292,10 +306,10 @@ nav{
 }
 
 .about-card{
-    max-width: 350px;
+    width: 20%;
     min-width: 200px;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .card-image{
@@ -324,6 +338,11 @@ nav{
     color: #F5F5F5;
     overflow: hidden;
     text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+
+#work-anchor{
+    position: absolute;
+    top: -70px;
 }
 
 .work-panel-bg{
@@ -489,9 +508,15 @@ li.work-subtitle{
 */
 
 .contact{
+    position: relative;
     align-items: center;
     
     /*background: linear-gradient(to top right, rgba(219, 54, 164, 0.5), rgba(247, 255, 0, 0.5));*/
+}
+
+#contact-anchor{
+    position: absolute;
+    top: -70px;
 }
 
 .contact-title{
@@ -556,6 +581,23 @@ li.work-subtitle{
     color: #F5F5F5;
 }
 
+.to-the-top{
+    height: 35px;
+    width: 35px;
+    margin-top: 60px;
+    margin-bottom: -40px;
+
+    transform: rotate(135deg);
+    border-bottom: 3px solid #f9a825;
+    border-left: 3px solid #f9a825;
+
+    transition: 0.4s all;
+}
+
+.to-the-top:hover{
+    border-color: #f9d630;
+}
+
 
 /*
 =========== FOOTER=============
@@ -564,7 +606,7 @@ li.work-subtitle{
 
 
 footer{
-    height: 120px;
+    height: 60px;
     background-color: #262626;
     justify-content: center;
     align-items: center;
