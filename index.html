@@ -14,22 +14,22 @@
         <p class="logo-bottom">Dávid</p>
     </a>
     <nav class="nav">
-        <a data-scroll href="#about-me-anchor" class="nav-item">About me</a>
-        <a data-scroll href="#work-anchor" class="nav-item">My work</a>
-        <a data-scroll href="#contact-anchor" class="nav-item">Contact</a>
+        <a data-scroll href="#about-me" class="nav-item">About me</a>
+        <a data-scroll href="#work" class="nav-item">My work</a>
+        <a data-scroll href="#contact" class="nav-item">Contact</a>
     </nav>
 </header>
 <main class="col">
-    <div id="top-anchor"></div>
+    <div id="top"></div>
     <section class="banner box-shadow col">
         <h1 class="page-title">Hi, I'm Dávid. I design & build websites.</h1>
-        <a data-scroll href="#contact-anchor" class="banner-button">I'm available for hire.</a>
+        <a data-scroll href="#contact" class="banner-button">I'm available for hire.</a>
 
         <div class="banner-bg"></div>
     </section>
 
     <section class="about-wrapper col panel box-shadow">
-        <div id="about-me-anchor"></div>
+        <div id="about-me"></div>
         <h2 class="about-title panel-title">About Me</h2>
         <p class="about-text">
             I'm a 23 year-old web developer based in Hungary. I love working on the web and I've been building websites
@@ -123,7 +123,7 @@
     </section>
 
     <section class="work-wrapper panel col box-shadow">
-        <div id="work-anchor"></div>
+        <div id="work"></div>
         <h2 class="work-title panel-title">Portfolio</h2>
         <!--<h3 class="work-subtitle panel-subtitle">Things I've made for work or as a side project</h3>-->
 
@@ -249,7 +249,7 @@
     </section>
 
     <section class="contact panel col">
-        <div id="contact-anchor"></div>
+        <div id="contact"></div>
         <h2 class="panel-title contact-title">Let's work together!</h2>
         <form action="" class="contact-form col">
             <input class="form-input" name="name" id="name" placeholder="Name" required>
@@ -257,6 +257,7 @@
             <textarea name="message" id="" class="form-textarea form-input" placeholder="Let's build something awesome"
                       required></textarea>
             <input type="submit" value="Submit" class="form-submit">
+            <p class="contact-message"></p>
         </form>
         <a data-scroll href="#top-anchor" class="to-the-top"></a>
     </section>
@@ -279,6 +280,7 @@
         <p class="footer-copyright">Handmade by me © 2017.</p>
     </div>
     <script src="./js/smooth-scroll.js"></script>
+    <script src="./js/sendContact.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>

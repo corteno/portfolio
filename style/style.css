@@ -293,7 +293,7 @@ nav{
     line-height: 23px;
 }
 
-#about-me-anchor{
+#about-me{
     position: absolute;
     top: -70px;
 }
@@ -340,7 +340,7 @@ nav{
     text-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
 
-#work-anchor{
+#work{
     position: absolute;
     top: -70px;
 }
@@ -514,7 +514,7 @@ li.work-subtitle{
     /*background: linear-gradient(to top right, rgba(219, 54, 164, 0.5), rgba(247, 255, 0, 0.5));*/
 }
 
-#contact-anchor{
+#contact{
     position: absolute;
     top: -70px;
 }
@@ -596,6 +596,13 @@ li.work-subtitle{
 
 .to-the-top:hover{
     border-color: #f9d630;
+}
+
+.contact-message{
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: MonsterratRegular;
+
 }
 
 
