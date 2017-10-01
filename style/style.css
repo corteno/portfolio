@@ -60,7 +60,7 @@ header{
     width: 100%;
     align-items: center;
 
-    padding-right: 40px;
+    padding-right: 20px;
     z-index: 20;
     background: #fff;
     height: 70px;
@@ -99,6 +99,8 @@ nav{
     z-index: 15;
     justify-content: flex-end;
     align-items: center;
+
+    transition: 0.4s all;
 }
 
 .nav-item{
@@ -154,6 +156,63 @@ nav{
 .nav-item:hover:before{
     left:0;
     opacity: 1;
+}
+
+.hamburger{
+    position: relative;
+    display: none;
+    font-size: 26px;
+
+    margin-left: auto;
+}
+
+.hamburger p{
+    z-index: 10;
+}
+
+.menu-background{
+    position: absolute;
+    top: -47.5vh;
+    left: -48.5vh;
+    /*top: -52.5vh;
+    left: -44.5vh;*/
+    transform-origin: 50% 50%;
+    z-index: 8;
+
+    background: #fff;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 10000px;
+    transform: scale(0.08);
+
+    transition: 0.5s all;
+}
+
+.menu-background.menu-background-active{
+    transform: scale(3);
+}
+
+.nav.nav-active{
+    position: absolute;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+
+    top: calc(50vh - 100px);
+    opacity: 1;
+
+    animation-name: nav-active;
+    animation-duration: 0.3s;
+}
+
+@keyframes nav-active {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+.nav.nav-active a{
+    font-size: 24px;
 }
 
 .banner{
@@ -521,6 +580,7 @@ li.work-subtitle{
 
 .contact-title{
     margin-bottom: 50px;
+    text-align: center;
 }
 
 
@@ -610,8 +670,6 @@ li.work-subtitle{
 =========== FOOTER=============
 */
 
-
-
 footer{
     height: 60px;
     background-color: #262626;
@@ -668,6 +726,17 @@ footer{
 }
 
 
+
+@media screen and (max-width: 700px) {
+    .nav{
+        display: none;
+        opacity: 0;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+}
 
 
 /*
