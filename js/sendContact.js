@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) => {
         }
     };
 
-    xhr.open('POST', 'http://localhost:3000/contact', true);
+    xhr.open('POST', 'https://bd-portfolio-api.herokuapp.com/contact', true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.send(JSON.stringify(message));
 
